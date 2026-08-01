@@ -1,34 +1,39 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   width: 100vw;
   height: 100vh;
   background-color: #0d0d0d;
-  color: #e8e8e8;
-  font-family: system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.card {
-  text-align: center;
-  padding: 40px 20px;
-  background: #161616;
-  border: 1px solid #262626;
-  border-radius: 20px;
-  width: 280px;
-}
-
 .icon-link {
   color: #e8e8e8;
   display: inline-block;
-  transition: transform 0.2s ease;
+  text-decoration: none;
+  transition: transform 0.15s ease, color 0.15s ease;
 }
 
 .icon-link:active {
-  transform: scale(0.9);
+  transform: scale(0.92);
+  color: #ffffff;
 }
 
-h2 { margin-top: 15px; font-size: 1.2rem; }
-p { margin-top: 5px; font-size: 0.85rem; color: #888; }
+.instagram-svg {
+  width: 100px;
+  height: 100px;
+  fill: currentColor;
+}
