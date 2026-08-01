@@ -1,7 +1,7 @@
 {
   "name": "Mi_Instagram",
   "short_name": "Mi_Instagram",
-  "start_url": "https://instagram.com/mi_galeria2026",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0d0d0d",
   "theme_color": "#0d0d0d",
