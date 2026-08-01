@@ -256,7 +256,7 @@ Manifiesto declarativo con vectorización directa en Data-URI para eliminar peti
 }
 ```
 
-### 6.4. Servidor Proxy y Control de Caché (`ServiceWorker.js`)
+(OPCIONAL)### 6.4. Servidor Proxy y Control de Caché (`ServiceWorker.js`) ESTO ES OPCIONAL  , SE PUEDE CONSTRUIR app SIN JAVASCRIPT
 Service Worker estático que gestiona el ciclo de vida sin bloquear el rendimiento y toma el control inmediato de los clientes en la red.
 
 ```javascript
