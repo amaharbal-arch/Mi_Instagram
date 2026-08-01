@@ -1,0 +1,15 @@
+{
+  "name": "Mi_Instagram Pro",
+  "short_name": "Mi_Instagram",
+  "start_url": "https://www.instagram.com/mi_galeria2026/",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#0d0d0d",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22128%22%20fill%3D%22%230d0d0d%22%2F%3E%3Crect%20x%3D%2296%22%20y%3D%2296%22%20width%3D%22320%22%20height%3D%22320%22%20rx%3D%2296%22%20stroke%3D%22%23E8E8E8%22%20stroke-width%3D%2228%22%20fill%3D%22none%22%2F%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22256%22%20r%3D%2272%22%20stroke%3D%22%23E8E8E8%22%20stroke-width%3D%2228%22%20fill%3D%22none%22%2F%3E%3Ccircle%20cx%3D%22344%22%20cy%3D%22168%22%20r%3D%2218%22%20fill%3D%22%23E8E8E8%22%2F%3E%3C%2Fsvg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
