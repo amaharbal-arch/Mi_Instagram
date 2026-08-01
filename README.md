@@ -353,3 +353,26 @@ flowchart LR
 3. Importar el repositorio correspondiente.
 4. En la configuración de construcción (*Build & Output Settings*), seleccionar el framework como **"Other"** (ficheros estáticos puros).
 5. Confirmar el despliegue (**Deploy**). En menos de 5 segundos, la PWA estará disponible globalmente en un dominio `.vercel.app` con SSL cifrado y soporte nativo para instalación PWA.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Anexo A: Arquitectura Ultraliviana (Zero-App-JS Pattern)
+
+En arquitecturas orientadas a rendimiento extremo y mínimo consumo de recursos, es posible prescindir totalmente de un script de lógica principal en el cliente (`app.js` o frameworks JS).
+
+### A.1. Separación de Responsabilidades
+
+| Componente | Rol en Arquitectura Ultraliviana | Obligatoriedad |
+| :--- | :--- | :--- |
+| **HTML5 / CSS3** | Interfaz, diseño responsivo, estados visuales (`:checked`, `:hover`, `:target`) y animaciones puras. | **Obligatorio** |
+| **`manifest.json`** | Registra la PWA en el sistema operativo (icono SVG inyectado, colores de tema, modo `standalone`). | **Obligatorio** |
+| **`ServiceWorker.js`** | Único punto de ejecución JavaScript. Gestiona almacenamiento en caché, intercepción de red y soporte fuera de línea. | **Obligatorio** |
+| **`app.js` / Lógica UI** | Manipulación del DOM y lógica cliente. | **Opcional (Eliminado)** |
+
+### A.2. Fundamento Técnico
+El estándar PWA de la W3C no exige código JavaScript para la capa de presentación. Al resolver la interactividad visual mediante CSS puro y delegar el comportamiento progresivo exclusivamente al Service Worker, se logran tres ventajas estructurales:
+
+1. **Cero Deuda Técnica:** Sin dependencias de terceros ni compiladores.
+2. **Carga Inmediata:** Se elimina el tiempo de parseo y ejecución del hilo principal de JS (*Main Thread Blocking*).
+3. **Escalabilidad y Portabilidad:** Ideal para micro-proyectos de alto impacto y bajo consumo (Tarjetas Digitales, Reproductores de Radio Online, Landing Pages y Accesos Directos PWA).
